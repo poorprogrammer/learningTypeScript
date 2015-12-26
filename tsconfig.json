@@ -1,11 +1,11 @@
-{
-    "compilerOptions": {
+{ "compilerOptions": {
         "module": "commonjs",
         "target": "es3",
         "noImplicitAny": false,
         "outDir": "built",
         "rootDir": ".",
-        "sourceMap": false
+        "sourceMap": false,
+        "watch": true
     },
     "files":[
       "typings/jasmine/jasmine.d.ts",
