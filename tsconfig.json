@@ -10,7 +10,9 @@
     "files":[
       "typings/jasmine/jasmine.d.ts",
       "tests/fizzbuzzTest.ts",
-      "src/fizzbuzz.ts"
+      "tests/tennisTest.ts",
+      "src/fizzbuzz.ts",
+      "src/tennisRule.ts"
     ],
     "exclude": [
         "node_modules"
