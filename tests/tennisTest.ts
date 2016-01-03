@@ -7,30 +7,30 @@ describe("Tennis rules", ()=>{
     tennisRule = new TennisRule();
   })
 
+  function scoreTo(player:string, score:Number, counter:Counter) {
+      for(var i = 0; i < score; i++){
+        counter.scoreTo(player)
+      }
+  }
+
   it("should announce Love-Love" ,()=>{
     expect(tennisRule.announce(counter)).toEqual("Love-Love")
   })
 
   it("should announce 15-Love", ()=>{
-    counter.scoreTo("A")
+    scoreTo("A", 1, counter)
     expect(tennisRule.announce(counter)).toEqual("15-Love")
   })
 
   it("should announce 15-All", ()=>{
-    counter.scoreTo("A")
-    counter.scoreTo("B")
+    scoreTo("A", 1, counter)
+    scoreTo("B", 1, counter)
     expect(tennisRule.announce(counter)).toEqual("15-All")
   })
 
   it("should announce Deuce", ()=>{
-    counter.scoreTo("A")
-    counter.scoreTo("A")
-    counter.scoreTo("A")
-    counter.scoreTo("A")
-    counter.scoreTo("B")
-    counter.scoreTo("B")
-    counter.scoreTo("B")
-    counter.scoreTo("B")
+    scoreTo("A", 4, counter)
+    scoreTo("B", 4, counter)
 
     expect(tennisRule.announce(counter)).toEqual("Deuce")
   })
