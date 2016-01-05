@@ -1,0 +1,29 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "karma.conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poorprogrammer/learningTypeScript.git"
+  },
+  "author": "Phongsak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poorprogrammer/learningTypeScript/issues"
+  },
+  "homepage": "https://github.com/poorprogrammer/learningTypeScript#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.18",
+    "karma-cli": "^0.1.2",
+    "karma-jasmine": "^0.3.6",
+    "phantomjs": "^1.9.18"
+  }
+}
